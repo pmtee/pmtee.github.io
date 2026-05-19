@@ -267,6 +267,88 @@ footer{padding:24px 60px;border-top:1px solid var(--border);display:flex;justify
   .ctw{grid-template-columns:1fr;gap:40px;}footer{flex-direction:column;gap:10px;text-align:center;}
 }
 
+/* ── MOBILE (phones) ──────────────────────────────────── */
+@media(max-width:640px){
+  /* Nav */
+  nav{padding:0 16px;height:56px;}
+  .nlogo{font-size:13px;}
+
+  /* Hero */
+  .hero{padding:76px 16px 48px;}
+  .hname{font-size:clamp(48px,13vw,72px);letter-spacing:-1.5px;}
+  .hsub{font-size:12px;}
+  .btn{padding:11px 18px;font-size:11px;}
+
+  /* Stats — 2 cols on phone */
+  .sts{grid-template-columns:repeat(2,1fr);padding:20px 16px;}
+  .sn{font-size:34px;}
+
+  /* Sections */
+  .sec{padding:56px 16px;}
+  .snum{font-size:48px;}
+  .stt{font-size:28px;}
+
+  /* Skills — 1 col on phone */
+  .skg{grid-template-columns:1fr;}
+
+  /* Project cards */
+  .pjg{grid-template-columns:1fr;gap:14px;}
+  .pjc{padding:22px 18px;}
+  .pjn{font-size:22px;}
+  .pji{font-size:42px;top:12px;right:14px;}
+
+  /* Featured project — stack vertically, hide terminal on phone */
+  .pjf{grid-column:span 1;grid-template-columns:1fr;gap:20px;}
+  .pjf .tm2{display:none;}
+
+  /* Demo panel — full responsive */
+  .dpanel{margin-top:12px;}
+  .dp-body{padding:14px;}
+  .dp-hdr{padding:10px 14px;flex-wrap:wrap;gap:6px;}
+  .dp-title{font-size:10px;}
+  .dp-right{gap:8px;}
+
+  /* Endpoint rows — stack method+path, push desc below */
+  .ep-row{flex-wrap:wrap;gap:6px;padding:8px 10px;}
+  .ep-method{min-width:36px;font-size:10px;}
+  .ep-path{font-size:11px;flex:1;min-width:120px;}
+  .ep-desc{font-size:10px;width:100%;color:var(--muted);padding-left:44px;margin-top:-2px;}
+
+  /* Test pass list */
+  .test-pass{font-size:10px;}
+
+  /* InfraWatch demo */
+  .iwo{font-size:11px;}
+
+  /* Titanic prediction form */
+  .dg{grid-template-columns:1fr;}
+  .dbn{font-size:11px;padding:10px;}
+
+  /* EDA bars */
+  .bar-lbl{font-size:10px;}
+
+  /* Finance tracker */
+  .fin-row{flex-direction:column;}
+  .fin-in{width:100%;max-width:100% !important;}
+
+  /* Certs — 1 col */
+  .ceg{grid-template-columns:1fr;}
+  .cec{padding:14px 16px;}
+
+  /* Experience */
+  .xtl{padding-left:24px;}
+  .xli{padding:0 0 36px 24px;}
+  .eco{font-size:22px;}
+
+  /* Contact */
+  .ctw{grid-template-columns:1fr;gap:28px;}
+  .cth{font-size:clamp(36px,10vw,56px);}
+  .cl{padding:16px 16px;}
+
+  /* Section header numbers */
+  .sh{margin-bottom:36px;}
+}
+
 /* ── FLOATING PARTICLES ──────────────────────────────── */
 .particles{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
 .particle{position:absolute;border-radius:50%;animation:float linear infinite;}
